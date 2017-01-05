@@ -1,6 +1,6 @@
 {
   "name": "equal-length",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Extend lines to equal length",
   "license": "MIT",
   "repository": "vadimdemedes/equal-length",
