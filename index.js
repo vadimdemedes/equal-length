@@ -1,7 +1,11 @@
 'use strict';
 
-module.exports = str => {
-	const lines = str.split('\n');
+module.exports = input => {
+	if (typeof input !== 'string') {
+		throw new TypeError(`Expected input to be a string, got ${typeof input}`);
+	}
+
+	const lines = input.split('\n');
 	const maxLength = Math.max.apply(null, lines.map(line => line.length));
 
 	return lines

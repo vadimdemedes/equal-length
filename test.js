@@ -1,6 +1,10 @@
 import test from 'ava';
 import equalLength from './';
 
+test('fail if input is not a string', t => {
+	t.throws(() => equalLength(1), 'Expected input to be a string, got number');
+});
+
 test('extend lines to equal length', t => {
 	const actual = equalLength([
 		'a  ',
